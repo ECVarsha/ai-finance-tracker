@@ -4,8 +4,6 @@ An AI-powered personal finance dashboard to help you track expenses, analyze spe
 
 A personal finance dashboard built with **Streamlit** to track your expenses and get smart insights into your spending habits.
 
-![App Screenshot](https://i.imgur.com/your_screenshot_link_here.png)
-*(Replace the link above with a screenshot of your app!)*
 
 ---
 

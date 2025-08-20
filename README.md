@@ -16,7 +16,7 @@ Track expenses, visualize spending patterns, and get AI-powered insights into yo
   - Predictive analytics – forecast future spending  
   - Smart categorization – auto-detect expense categories using NLP  
   - Anomaly detection – flag unusual or overspending behavior  
-- 🗄 **SQLite + SQLAlchemy** for reliable database handling  
+- **SQLite + SQLAlchemy** for reliable database handling  
 
 ---
 

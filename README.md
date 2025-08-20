@@ -23,16 +23,31 @@ Track expenses, visualize spending patterns, and get AI-powered insights into yo
 ## 📂 Project Structure  
 
 finance-tracker/
-│── app.py # Main Streamlit app (entry point)
-│── home.py # Dashboard page
-│── login.py # Login page
-│── database.py # SQLAlchemy ORM models & DB operations
-│── init_db.py # Initialize database (tables setup)
-│── check_schema.py # Debug: check DB schema
-│── expenses.db # (SQLite DB - generated at runtime)
-│── users.db # (SQLite DB - generated at runtime)
-│── finance.db # (Alternative DB, unify recommended)
-│── README.md # Project documentation
+│── app.py              # Main entry Streamlit app (handles navigation)
+│
+├── pages/              # Streamlit multipage support
+│   │── home.py         # Dashboard page
+│   │── login.py        # Login page
+│   │── signup.py       # (Optional) Signup page
+│
+├── db/                 # Database logic
+│   │── database.py     # SQLAlchemy ORM models & functions
+│   │── init_db.py      # Initialize database (tables setup)
+│   │── check_schema.py # Debug: check DB schema
+│   │── finance.db      # Main database (unify here, ignore other .db files)
+│
+├── data/               # (Optional) Store exported CSVs, backups, etc.
+│   │── expenses.db     # old db - remove after migration
+│   │── users.db        # old db - remove after migration
+│   │── user.db         # old db - remove after migration
+│
+├── utils/              # Helper functions
+│   │── security.py     # password hashing / session utils
+│   │── ai.py           # AI-powered insights (prediction, NLP categorization)
+│
+├── requirements.txt    # Python dependencies
+├── README.md           # Project documentation
+└── .gitignore          # Ignore .db, __pycache__, venv, etc.
 
 ## ## How to Run It
 
